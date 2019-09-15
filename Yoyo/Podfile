@@ -1,0 +1,43 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '10.0'
+
+target 'Yoyo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  # use_frameworks!
+  pod 'YTKNetwork'
+  pod 'SDWebImage'
+  pod 'SVProgressHUD'
+  pod 'MJRefresh'
+  pod 'MJExtension'
+  pod 'Masonry'
+  pod 'CocoaLumberjack'
+  pod 'QMUIKit'
+  pod 'SDCycleScrollView'
+  pod 'RSKImageCropper'
+  pod 'mob_sharesdk'
+  pod 'mob_sharesdk/ShareSDKPlatforms/WeChat'
+  pod 'mob_sharesdk/ShareSDKPlatforms/QQ'
+
+  pod 'SGPagingView'
+  pod 'HWPanModal'
+  pod 'TZImagePickerController'
+  # pod 'HXPhotoPicker', '2.3.1'
+  
+  pod 'IQKeyboardManager'
+
+  pod 'JPImageresizerView'
+  # 环信
+  pod 'Hyphenate'
+  # Pods for Yoyo
+
+  target 'YoyoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'YoyoUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
