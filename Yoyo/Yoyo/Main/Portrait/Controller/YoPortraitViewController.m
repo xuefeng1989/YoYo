@@ -18,7 +18,7 @@
 #import "YoUIHelper.h"
 #import "YoPortraitNavigationController.h"
 #import "YoPortraitCutViewController.h"
-
+#import "Yoyo-Swift.h"
 
 
 #define MaxSelectedImageCount 9
@@ -66,37 +66,31 @@
     QMUIAlertAction *photo = [QMUIAlertAction actionWithTitle:@"照片" style:QMUIAlertActionStyleDefault handler:^(__kindof QMUIAlertController * _Nonnull aAlertController, QMUIAlertAction * _Nonnull action) {
         [self openPhoto];
     }];
-    QMUIAlertAction *test = [QMUIAlertAction actionWithTitle:@"测试评论" style:QMUIAlertActionStyleDefault handler:^(__kindof QMUIAlertController * _Nonnull aAlertController, QMUIAlertAction * _Nonnull action) {
-        [self test];
-    }];
+//    QMUIAlertAction *test = [QMUIAlertAction actionWithTitle:@"测试评论" style:QMUIAlertActionStyleDefault handler:^(__kindof QMUIAlertController * _Nonnull aAlertController, QMUIAlertAction * _Nonnull action) {
+//        [self test];
+//    }];
     QMUIAlertAction *cancel = [QMUIAlertAction actionWithTitle:@"取消" style:QMUIAlertActionStyleCancel handler:^(QMUIAlertController *aAlertController, QMUIAlertAction *action) {
     }];
 
 //    [alert addAction:video];
     [alert addAction:photo];
-    [alert addAction:test];
+//    [alert addAction:test];
     [alert addAction:cancel];
     [alert showWithAnimated:YES];
 }
 
 - (void)openPhoto {
-    TZImagePickerController *picker = [[TZImagePickerController alloc] initWithMaxImagesCount:9 delegate:self];
-    [[UINavigationBar appearance] setBackgroundImage:[YoUIHelper navigationBarBackgroundImageWithThemeColor:[[UIColor blackColor] colorWithAlphaComponent:0.8]] forBarMetrics:UIBarMetricsDefault];
-    picker.allowTakePicture = NO; // 在内部显示拍照按钮
-    picker.allowTakeVideo = NO;   // 在内部显示拍视频按
-    picker.allowPickingVideo = NO;
-    [self presentViewController:picker animated:YES completion:nil];
+    KSMediaPickerController *ctl = [KSMediaPickerController.alloc initWithMaxItemCount:9];
+    KSNavigationController *nav = [KSNavigationController.alloc initWithRootViewController:ctl];
+    [UIApplication.sharedApplication.keyWindow.rootViewController presentViewController:nav animated:YES completion:nil];
 }
 
 - (void)openVideo {
-    TZImagePickerController *picker = [[TZImagePickerController alloc] initWithMaxImagesCount:1 delegate:self];
-    [[UINavigationBar appearance] setBackgroundImage:[YoUIHelper navigationBarBackgroundImageWithThemeColor:[[UIColor blackColor] colorWithAlphaComponent:0.8]] forBarMetrics:UIBarMetricsDefault];
-    picker.allowTakePicture = NO; // 在内部显示拍照按钮
-    picker.allowTakeVideo = YES;   // 在内部显示拍视频按
-    picker.allowPickingVideo = YES;
-    picker.allowPickingImage = NO;
-    picker.videoMaximumDuration = 15; // 视频最大拍摄时间
-    [self presentViewController:picker animated:YES completion:nil];
+    KSMediaPickerController *ctl = [KSMediaPickerController.alloc initWithMaxItemCount:9];
+    KSNavigationController *nav = [KSNavigationController.alloc initWithRootViewController:ctl];
+    [UIApplication.sharedApplication.keyWindow.rootViewController presentViewController:nav animated:YES completion:nil];
+    
+    
 }
 
 

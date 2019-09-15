@@ -17,6 +17,7 @@
 
 #import "MyFileLogger.h"
 #import "YoLocationManager.h"
+#import "KSGlobalTools.h"
 
 #define AppkeyHunXin @"1110190603065847#appsshidai"
 
@@ -38,7 +39,7 @@
     
     // 日志
     [MyFileLogger sharedManager];
-    
+    [KSGlobalTools startThirdLibWithDelegate:self options:launchOptions];
     EMOptions *options = [EMOptions optionsWithAppkey:AppkeyHunXin];
     // apnsCertName是证书名称，可以先传nil，等后期配置apns推送时在传入证书名称
     options.apnsCertName = @"aps_development";
