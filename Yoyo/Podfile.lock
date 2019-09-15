@@ -17,7 +17,7 @@ PODS:
   - CocoaLumberjack (3.5.3):
     - CocoaLumberjack/Core (= 3.5.3)
   - CocoaLumberjack/Core (3.5.3)
-  - HWPanModal (0.2.9.2):
+  - HWPanModal (0.2.9.4):
     - KVOController
   - Hyphenate (3.6.0)
   - IQKeyboardManager (6.4.0)
@@ -26,15 +26,15 @@ PODS:
   - Masonry (1.1.0)
   - MJExtension (3.0.17)
   - MJRefresh (3.2.0)
-  - mob_sharesdk (4.2.6):
-    - mob_sharesdk/ShareSDK (= 4.2.6)
+  - mob_sharesdk (4.2.7):
+    - mob_sharesdk/ShareSDK (= 4.2.7)
     - MOBFoundation
-  - mob_sharesdk/ShareSDK (4.2.6):
+  - mob_sharesdk/ShareSDK (4.2.7):
     - MOBFoundation
-  - mob_sharesdk/ShareSDKPlatforms/QQ (4.2.6):
+  - mob_sharesdk/ShareSDKPlatforms/QQ (4.2.7):
     - mob_sharesdk/ShareSDK
     - MOBFoundation
-  - mob_sharesdk/ShareSDKPlatforms/WeChat (4.2.6):
+  - mob_sharesdk/ShareSDKPlatforms/WeChat (4.2.7):
     - mob_sharesdk/ShareSDK
     - MOBFoundation
   - MOBFoundation (3.2.3)
@@ -363,7 +363,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
-  HWPanModal: 473e043096c66ff70f1642377400a0f50eb77b90
+  HWPanModal: f43e3c299ada53a0f5d9dd8b2eeb171be9b0bade
   Hyphenate: 2d473451b2c2d1edddba0270e2b048faa290e246
   IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
   JPImageresizerView: eedd90ce2082fa10f104f4282e428cd1c3da86b9
@@ -371,7 +371,7 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
-  mob_sharesdk: e993f357a6f1581a956aea16ea142c9de0425bf7
+  mob_sharesdk: 6f1392f547cfbe7395ab82f40be4b04783c61eaf
   MOBFoundation: 246159a97f5e6c8a271b674dd885dc4b0953e45e
   QMUIKit: a3af645843b9558eb7aaf407b320eaeb45ab6144
   RSKImageCropper: 05e3b82a18da83ea3c2b7bffa7f2199a621d6802

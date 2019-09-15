@@ -94,6 +94,60 @@
 		280035F5232A8E2400956459 /* EaseUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2800357D232A8E2400956459 /* EaseUI.m */; };
 		280035F8232B34FC00956459 /* YoSingleChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280035F7232B34FC00956459 /* YoSingleChatViewController.m */; };
 		280035FB232CD0A900956459 /* NSNumber+YoLength.m in Sources */ = {isa = PBXBuildFile; fileRef = 280035FA232CD0A900956459 /* NSNumber+YoLength.m */; };
+		28003663232E7AE600956459 /* KSGlobalTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 28003602232E7AE600956459 /* KSGlobalTools.m */; };
+		28003664232E7AE600956459 /* KSMarkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28003605232E7AE600956459 /* KSMarkLabel.swift */; };
+		28003665232E7AE600956459 /* KSMarksBrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28003606232E7AE600956459 /* KSMarksBrowseView.swift */; };
+		28003666232E7AE600956459 /* KSTextMarksBrowseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28003607232E7AE600956459 /* KSTextMarksBrowseController.swift */; };
+		28003667232E7AE600956459 /* KSMarksBrowseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28003608232E7AE600956459 /* KSMarksBrowseModel.swift */; };
+		28003668232E7AE600956459 /* KSMarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28003609232E7AE600956459 /* KSMarksView.swift */; };
+		28003669232E7AE600956459 /* KSPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2800360B232E7AE600956459 /* KSPageControl.m */; };
+		2800366A232E7AE600956459 /* KSGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800360E232E7AE600956459 /* KSGradientButton.swift */; };
+		2800366B232E7AE600956459 /* KSBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800360F232E7AE600956459 /* KSBorderButton.swift */; };
+		2800366C232E7AE600956459 /* KSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28003610232E7AE600956459 /* KSButton.swift */; };
+		2800366D232E7AE600956459 /* KSTriangleIndicatorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 28003612232E7AE600956459 /* KSTriangleIndicatorButton.m */; };
+		2800366E232E7AE600956459 /* KSIndicatorLabelControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28003613232E7AE600956459 /* KSIndicatorLabelControl.m */; };
+		2800366F232E7AE600956459 /* KSTriangleDisclosureIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 28003615232E7AE600956459 /* KSTriangleDisclosureIndicator.m */; };
+		28003670232E7AE600956459 /* KSMediaPickerHandlerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800361A232E7AE600956459 /* KSMediaPickerHandlerController.swift */; };
+		28003671232E7AE600956459 /* KSMediaPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800361B232E7AE600956459 /* KSMediaPickerController.swift */; };
+		28003672232E7AE600956459 /* KSMediaPickerViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800361C232E7AE600956459 /* KSMediaPickerViewerController.swift */; };
+		28003673232E7AE600956459 /* KSMediaPickerOutputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800361E232E7AE600956459 /* KSMediaPickerOutputModel.swift */; };
+		28003674232E7AE600956459 /* KSMediaPickerItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800361F232E7AE600956459 /* KSMediaPickerItemModel.swift */; };
+		28003675232E7AE600956459 /* KSMediaPickerAlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28003620232E7AE600956459 /* KSMediaPickerAlbumModel.swift */; };
+		28003676232E7AE600956459 /* KSMediaPickerHandlerNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28003622232E7AE600956459 /* KSMediaPickerHandlerNavigationView.swift */; };
+		28003677232E7AE600956459 /* KSMediaPickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28003623232E7AE600956459 /* KSMediaPickerCollectionView.m */; };
+		28003678232E7AE600956459 /* KSMediaPickerViewImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28003624232E7AE600956459 /* KSMediaPickerViewImageCell.swift */; };
+		28003679232E7AE600956459 /* KSMediaPickerCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28003625232E7AE600956459 /* KSMediaPickerCameraView.swift */; };
+		2800367A232E7AE600956459 /* KSMediaPickerCameraToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28003626232E7AE600956459 /* KSMediaPickerCameraToolBar.swift */; };
+		2800367B232E7AE600956459 /* KSMediaPickerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28003627232E7AE600956459 /* KSMediaPickerScrollView.m */; };
+		2800367C232E7AE600956459 /* KSMediaPickerPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28003629232E7AE600956459 /* KSMediaPickerPreviewView.swift */; };
+		2800367D232E7AE600956459 /* KSMediaPickerSelectIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800362A232E7AE600956459 /* KSMediaPickerSelectIndicator.swift */; };
+		2800367E232E7AE600956459 /* KSMediaPickerViewAlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800362D232E7AE600956459 /* KSMediaPickerViewAlbumCell.swift */; };
+		2800367F232E7AE600956459 /* KSMediaViewerPictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800362E232E7AE600956459 /* KSMediaViewerPictureCell.swift */; };
+		28003680232E7AE600956459 /* KSMediaPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800362F232E7AE600956459 /* KSMediaPickerView.swift */; };
+		28003681232E7AE600956459 /* KSMediaPickerHandlerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28003630232E7AE600956459 /* KSMediaPickerHandlerCollectionView.m */; };
+		28003682232E7AE600956459 /* KSMediaPickerNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28003631232E7AE600956459 /* KSMediaPickerNavigationView.swift */; };
+		28003683232E7AE600956459 /* KSMediaPickerHandlerBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28003632232E7AE600956459 /* KSMediaPickerHandlerBaseCell.swift */; };
+		28003684232E7AE600956459 /* KSMediaPickerViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28003633232E7AE600956459 /* KSMediaPickerViewerView.swift */; };
+		28003685232E7AE600956459 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28003636232E7AE600956459 /* libcrypto.a */; };
+		28003686232E7AE600956459 /* BMKLocationkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28003637232E7AE600956459 /* BMKLocationkit.framework */; };
+		28003687232E7AE600956459 /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28003638232E7AE600956459 /* BaiduMapAPI_Base.framework */; };
+		28003688232E7AE600956459 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28003639232E7AE600956459 /* libssl.a */; };
+		28003689232E7AE600956459 /* BaiduMapAPI_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2800363A232E7AE600956459 /* BaiduMapAPI_Search.framework */; };
+		2800368A232E7AE600956459 /* KSPoiSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2800363C232E7AE600956459 /* KSPoiSearch.m */; };
+		2800368B232E7AE600956459 /* KSGeoCodeSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2800363D232E7AE600956459 /* KSGeoCodeSearch.m */; };
+		2800368C232E7AE600956459 /* KSLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2800363E232E7AE600956459 /* KSLocationManager.m */; };
+		2800368D232E7AE600956459 /* KSSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 28003644232E7AE600956459 /* KSSegmentedControl.m */; };
+		2800368E232E7AE600956459 /* KSPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28003649232E7AE600956459 /* KSPublishViewController.m */; };
+		2800368F232E7AE600956459 /* KSPublishViewUploadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2800364B232E7AE600956459 /* KSPublishViewUploadModel.m */; };
+		28003690232E7AE600956459 /* KSPublishViewPictureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2800364E232E7AE600956459 /* KSPublishViewPictureCell.m */; };
+		28003691232E7AE600956459 /* KSPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2800364F232E7AE600956459 /* KSPublishView.m */; };
+		28003692232E7AE600956459 /* KSMediaViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28003654232E7AE600956459 /* KSMediaViewerController.m */; };
+		28003693232E7AE600956459 /* KSMediaViewerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 28003658232E7AE600956459 /* KSMediaViewerTransition.m */; };
+		28003694232E7AE600956459 /* KSMediaViewerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2800365A232E7AE600956459 /* KSMediaViewerCell.m */; };
+		28003695232E7AE600956459 /* KSMediaViewerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2800365B232E7AE600956459 /* KSMediaViewerView.m */; };
+		28003696232E7AE600956459 /* KSAddMarkLabelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28003660232E7AE600956459 /* KSAddMarkLabelController.swift */; };
+		28003697232E7AE600956459 /* KSAddMarkLabelSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28003661232E7AE600956459 /* KSAddMarkLabelSearchView.swift */; };
+		28003698232E7AE600956459 /* KSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28003662232E7AE600956459 /* KSExtension.swift */; };
 		284C90BB230D8A180026293F /* JhDownProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 284C90BA230D8A180026293F /* JhDownProgressView.m */; };
 		284C90BE230ED0AD0026293F /* YoPhotoBroweService.m in Sources */ = {isa = PBXBuildFile; fileRef = 284C90BD230ED0AD0026293F /* YoPhotoBroweService.m */; };
 		284C90C1231032670026293F /* YoMinePhotoOnce.m in Sources */ = {isa = PBXBuildFile; fileRef = 284C90C0231032670026293F /* YoMinePhotoOnce.m */; };
@@ -620,6 +674,83 @@
 		280035F7232B34FC00956459 /* YoSingleChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YoSingleChatViewController.m; sourceTree = "<group>"; };
 		280035F9232CD0A900956459 /* NSNumber+YoLength.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+YoLength.h"; sourceTree = "<group>"; };
 		280035FA232CD0A900956459 /* NSNumber+YoLength.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+YoLength.m"; sourceTree = "<group>"; };
+		28003600232E7AE600956459 /* KSSwiftBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSSwiftBridgingHeader.h; sourceTree = "<group>"; };
+		28003602232E7AE600956459 /* KSGlobalTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSGlobalTools.m; sourceTree = "<group>"; };
+		28003603232E7AE600956459 /* KSGlobalTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSGlobalTools.h; sourceTree = "<group>"; };
+		28003605232E7AE600956459 /* KSMarkLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMarkLabel.swift; sourceTree = "<group>"; };
+		28003606232E7AE600956459 /* KSMarksBrowseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMarksBrowseView.swift; sourceTree = "<group>"; };
+		28003607232E7AE600956459 /* KSTextMarksBrowseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSTextMarksBrowseController.swift; sourceTree = "<group>"; };
+		28003608232E7AE600956459 /* KSMarksBrowseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMarksBrowseModel.swift; sourceTree = "<group>"; };
+		28003609232E7AE600956459 /* KSMarksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMarksView.swift; sourceTree = "<group>"; };
+		2800360B232E7AE600956459 /* KSPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPageControl.m; sourceTree = "<group>"; };
+		2800360C232E7AE600956459 /* KSPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPageControl.h; sourceTree = "<group>"; };
+		2800360E232E7AE600956459 /* KSGradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSGradientButton.swift; sourceTree = "<group>"; };
+		2800360F232E7AE600956459 /* KSBorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSBorderButton.swift; sourceTree = "<group>"; };
+		28003610232E7AE600956459 /* KSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSButton.swift; sourceTree = "<group>"; };
+		28003612232E7AE600956459 /* KSTriangleIndicatorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSTriangleIndicatorButton.m; sourceTree = "<group>"; };
+		28003613232E7AE600956459 /* KSIndicatorLabelControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSIndicatorLabelControl.m; sourceTree = "<group>"; };
+		28003614232E7AE600956459 /* KSTriangleDisclosureIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSTriangleDisclosureIndicator.h; sourceTree = "<group>"; };
+		28003615232E7AE600956459 /* KSTriangleDisclosureIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSTriangleDisclosureIndicator.m; sourceTree = "<group>"; };
+		28003616232E7AE600956459 /* KSIndicatorLabelControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSIndicatorLabelControl.h; sourceTree = "<group>"; };
+		28003617232E7AE600956459 /* KSTriangleIndicatorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSTriangleIndicatorButton.h; sourceTree = "<group>"; };
+		2800361A232E7AE600956459 /* KSMediaPickerHandlerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerHandlerController.swift; sourceTree = "<group>"; };
+		2800361B232E7AE600956459 /* KSMediaPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerController.swift; sourceTree = "<group>"; };
+		2800361C232E7AE600956459 /* KSMediaPickerViewerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerViewerController.swift; sourceTree = "<group>"; };
+		2800361E232E7AE600956459 /* KSMediaPickerOutputModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerOutputModel.swift; sourceTree = "<group>"; };
+		2800361F232E7AE600956459 /* KSMediaPickerItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerItemModel.swift; sourceTree = "<group>"; };
+		28003620232E7AE600956459 /* KSMediaPickerAlbumModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerAlbumModel.swift; sourceTree = "<group>"; };
+		28003622232E7AE600956459 /* KSMediaPickerHandlerNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerHandlerNavigationView.swift; sourceTree = "<group>"; };
+		28003623232E7AE600956459 /* KSMediaPickerCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMediaPickerCollectionView.m; sourceTree = "<group>"; };
+		28003624232E7AE600956459 /* KSMediaPickerViewImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerViewImageCell.swift; sourceTree = "<group>"; };
+		28003625232E7AE600956459 /* KSMediaPickerCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerCameraView.swift; sourceTree = "<group>"; };
+		28003626232E7AE600956459 /* KSMediaPickerCameraToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerCameraToolBar.swift; sourceTree = "<group>"; };
+		28003627232E7AE600956459 /* KSMediaPickerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMediaPickerScrollView.m; sourceTree = "<group>"; };
+		28003628232E7AE600956459 /* KSMediaPickerHandlerCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMediaPickerHandlerCollectionView.h; sourceTree = "<group>"; };
+		28003629232E7AE600956459 /* KSMediaPickerPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerPreviewView.swift; sourceTree = "<group>"; };
+		2800362A232E7AE600956459 /* KSMediaPickerSelectIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerSelectIndicator.swift; sourceTree = "<group>"; };
+		2800362B232E7AE600956459 /* KSMediaPickerCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMediaPickerCollectionView.h; sourceTree = "<group>"; };
+		2800362C232E7AE600956459 /* KSMediaPickerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMediaPickerScrollView.h; sourceTree = "<group>"; };
+		2800362D232E7AE600956459 /* KSMediaPickerViewAlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerViewAlbumCell.swift; sourceTree = "<group>"; };
+		2800362E232E7AE600956459 /* KSMediaViewerPictureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaViewerPictureCell.swift; sourceTree = "<group>"; };
+		2800362F232E7AE600956459 /* KSMediaPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerView.swift; sourceTree = "<group>"; };
+		28003630232E7AE600956459 /* KSMediaPickerHandlerCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMediaPickerHandlerCollectionView.m; sourceTree = "<group>"; };
+		28003631232E7AE600956459 /* KSMediaPickerNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerNavigationView.swift; sourceTree = "<group>"; };
+		28003632232E7AE600956459 /* KSMediaPickerHandlerBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerHandlerBaseCell.swift; sourceTree = "<group>"; };
+		28003633232E7AE600956459 /* KSMediaPickerViewerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerViewerView.swift; sourceTree = "<group>"; };
+		28003636232E7AE600956459 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		28003637232E7AE600956459 /* BMKLocationkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BMKLocationkit.framework; sourceTree = "<group>"; };
+		28003638232E7AE600956459 /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
+		28003639232E7AE600956459 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		2800363A232E7AE600956459 /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Search.framework; sourceTree = "<group>"; };
+		2800363C232E7AE600956459 /* KSPoiSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPoiSearch.m; sourceTree = "<group>"; };
+		2800363D232E7AE600956459 /* KSGeoCodeSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSGeoCodeSearch.m; sourceTree = "<group>"; };
+		2800363E232E7AE600956459 /* KSLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSLocationManager.m; sourceTree = "<group>"; };
+		2800363F232E7AE600956459 /* KSPoiSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPoiSearch.h; sourceTree = "<group>"; };
+		28003640232E7AE600956459 /* KSLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSLocationManager.h; sourceTree = "<group>"; };
+		28003641232E7AE600956459 /* KSGeoCodeSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSGeoCodeSearch.h; sourceTree = "<group>"; };
+		28003643232E7AE600956459 /* KSSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSSegmentedControl.h; sourceTree = "<group>"; };
+		28003644232E7AE600956459 /* KSSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSSegmentedControl.m; sourceTree = "<group>"; };
+		28003645232E7AE600956459 /* KSLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSLayout.h; sourceTree = "<group>"; };
+		28003648232E7AE600956459 /* KSPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPublishViewController.h; sourceTree = "<group>"; };
+		28003649232E7AE600956459 /* KSPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPublishViewController.m; sourceTree = "<group>"; };
+		2800364B232E7AE600956459 /* KSPublishViewUploadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPublishViewUploadModel.m; sourceTree = "<group>"; };
+		2800364C232E7AE600956459 /* KSPublishViewUploadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPublishViewUploadModel.h; sourceTree = "<group>"; };
+		2800364E232E7AE600956459 /* KSPublishViewPictureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPublishViewPictureCell.m; sourceTree = "<group>"; };
+		2800364F232E7AE600956459 /* KSPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPublishView.m; sourceTree = "<group>"; };
+		28003650232E7AE600956459 /* KSPublishViewPictureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPublishViewPictureCell.h; sourceTree = "<group>"; };
+		28003651232E7AE600956459 /* KSPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPublishView.h; sourceTree = "<group>"; };
+		28003654232E7AE600956459 /* KSMediaViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMediaViewerController.m; sourceTree = "<group>"; };
+		28003655232E7AE600956459 /* KSMediaViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMediaViewerController.h; sourceTree = "<group>"; };
+		28003657232E7AE600956459 /* KSMediaViewerTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMediaViewerTransition.h; sourceTree = "<group>"; };
+		28003658232E7AE600956459 /* KSMediaViewerTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMediaViewerTransition.m; sourceTree = "<group>"; };
+		2800365A232E7AE600956459 /* KSMediaViewerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMediaViewerCell.m; sourceTree = "<group>"; };
+		2800365B232E7AE600956459 /* KSMediaViewerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMediaViewerView.m; sourceTree = "<group>"; };
+		2800365C232E7AE600956459 /* KSMediaViewerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMediaViewerCell.h; sourceTree = "<group>"; };
+		2800365D232E7AE600956459 /* KSMediaViewerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMediaViewerView.h; sourceTree = "<group>"; };
+		2800365E232E7AE600956459 /* Yoyo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Yoyo-Bridging-Header.h"; sourceTree = "<group>"; };
+		28003660232E7AE600956459 /* KSAddMarkLabelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSAddMarkLabelController.swift; sourceTree = "<group>"; };
+		28003661232E7AE600956459 /* KSAddMarkLabelSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSAddMarkLabelSearchView.swift; sourceTree = "<group>"; };
+		28003662232E7AE600956459 /* KSExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSExtension.swift; sourceTree = "<group>"; };
 		2831548022F8625C00B18267 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		284C90B9230D8A180026293F /* JhDownProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JhDownProgressView.h; sourceTree = "<group>"; };
 		284C90BA230D8A180026293F /* JhDownProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JhDownProgressView.m; sourceTree = "<group>"; };
@@ -1265,10 +1396,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28003688232E7AE600956459 /* libssl.a in Frameworks */,
 				A5FE76C34B6DAB35EB5F486A /* libPods-Yoyo.a in Frameworks */,
+				28003686232E7AE600956459 /* BMKLocationkit.framework in Frameworks */,
+				28003685232E7AE600956459 /* libcrypto.a in Frameworks */,
 				280035A2232A8E2400956459 /* libopencore-amrnb.a in Frameworks */,
+				28003687232E7AE600956459 /* BaiduMapAPI_Base.framework in Frameworks */,
 				280035A1232A8E2400956459 /* libopencore-amrwb.a in Frameworks */,
 				C548466122EF1B9A002310D2 /* StoreKit.framework in Frameworks */,
+				28003689232E7AE600956459 /* BaiduMapAPI_Search.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1737,6 +1873,266 @@
 				2800357C232A8E2400956459 /* EaseUIResource.bundle */,
 			);
 			path = resources;
+			sourceTree = "<group>";
+		};
+		280035FF232E7AE600956459 /* PostPortrait */ = {
+			isa = PBXGroup;
+			children = (
+				28003600232E7AE600956459 /* KSSwiftBridgingHeader.h */,
+				28003601232E7AE600956459 /* Tools */,
+				28003604232E7AE600956459 /* KSMarkLabel */,
+				2800360A232E7AE600956459 /* KSPageControl */,
+				2800360D232E7AE600956459 /* KSButton */,
+				28003611232E7AE600956459 /* KSDisclosureIndicator */,
+				28003618232E7AE600956459 /* KSMediaPicker */,
+				28003634232E7AE600956459 /* Location */,
+				28003642232E7AE600956459 /* KSSegmentedControl */,
+				28003645232E7AE600956459 /* KSLayout.h */,
+				28003646232E7AE600956459 /* Publish */,
+				28003652232E7AE600956459 /* KSMediaViewer */,
+				2800365E232E7AE600956459 /* Yoyo-Bridging-Header.h */,
+				2800365F232E7AE600956459 /* KSAddMarkLabelController */,
+				28003662232E7AE600956459 /* KSExtension.swift */,
+			);
+			path = PostPortrait;
+			sourceTree = "<group>";
+		};
+		28003601232E7AE600956459 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				28003602232E7AE600956459 /* KSGlobalTools.m */,
+				28003603232E7AE600956459 /* KSGlobalTools.h */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		28003604232E7AE600956459 /* KSMarkLabel */ = {
+			isa = PBXGroup;
+			children = (
+				28003605232E7AE600956459 /* KSMarkLabel.swift */,
+				28003606232E7AE600956459 /* KSMarksBrowseView.swift */,
+				28003607232E7AE600956459 /* KSTextMarksBrowseController.swift */,
+				28003608232E7AE600956459 /* KSMarksBrowseModel.swift */,
+				28003609232E7AE600956459 /* KSMarksView.swift */,
+			);
+			path = KSMarkLabel;
+			sourceTree = "<group>";
+		};
+		2800360A232E7AE600956459 /* KSPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				2800360B232E7AE600956459 /* KSPageControl.m */,
+				2800360C232E7AE600956459 /* KSPageControl.h */,
+			);
+			path = KSPageControl;
+			sourceTree = "<group>";
+		};
+		2800360D232E7AE600956459 /* KSButton */ = {
+			isa = PBXGroup;
+			children = (
+				2800360E232E7AE600956459 /* KSGradientButton.swift */,
+				2800360F232E7AE600956459 /* KSBorderButton.swift */,
+				28003610232E7AE600956459 /* KSButton.swift */,
+			);
+			path = KSButton;
+			sourceTree = "<group>";
+		};
+		28003611232E7AE600956459 /* KSDisclosureIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				28003612232E7AE600956459 /* KSTriangleIndicatorButton.m */,
+				28003613232E7AE600956459 /* KSIndicatorLabelControl.m */,
+				28003614232E7AE600956459 /* KSTriangleDisclosureIndicator.h */,
+				28003615232E7AE600956459 /* KSTriangleDisclosureIndicator.m */,
+				28003616232E7AE600956459 /* KSIndicatorLabelControl.h */,
+				28003617232E7AE600956459 /* KSTriangleIndicatorButton.h */,
+			);
+			path = KSDisclosureIndicator;
+			sourceTree = "<group>";
+		};
+		28003618232E7AE600956459 /* KSMediaPicker */ = {
+			isa = PBXGroup;
+			children = (
+				28003619232E7AE600956459 /* Controller */,
+				2800361D232E7AE600956459 /* Model */,
+				28003621232E7AE600956459 /* View */,
+			);
+			path = KSMediaPicker;
+			sourceTree = "<group>";
+		};
+		28003619232E7AE600956459 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2800361A232E7AE600956459 /* KSMediaPickerHandlerController.swift */,
+				2800361B232E7AE600956459 /* KSMediaPickerController.swift */,
+				2800361C232E7AE600956459 /* KSMediaPickerViewerController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2800361D232E7AE600956459 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2800361E232E7AE600956459 /* KSMediaPickerOutputModel.swift */,
+				2800361F232E7AE600956459 /* KSMediaPickerItemModel.swift */,
+				28003620232E7AE600956459 /* KSMediaPickerAlbumModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28003621232E7AE600956459 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				28003622232E7AE600956459 /* KSMediaPickerHandlerNavigationView.swift */,
+				28003623232E7AE600956459 /* KSMediaPickerCollectionView.m */,
+				28003624232E7AE600956459 /* KSMediaPickerViewImageCell.swift */,
+				28003625232E7AE600956459 /* KSMediaPickerCameraView.swift */,
+				28003626232E7AE600956459 /* KSMediaPickerCameraToolBar.swift */,
+				28003627232E7AE600956459 /* KSMediaPickerScrollView.m */,
+				28003628232E7AE600956459 /* KSMediaPickerHandlerCollectionView.h */,
+				28003629232E7AE600956459 /* KSMediaPickerPreviewView.swift */,
+				2800362A232E7AE600956459 /* KSMediaPickerSelectIndicator.swift */,
+				2800362B232E7AE600956459 /* KSMediaPickerCollectionView.h */,
+				2800362C232E7AE600956459 /* KSMediaPickerScrollView.h */,
+				2800362D232E7AE600956459 /* KSMediaPickerViewAlbumCell.swift */,
+				2800362E232E7AE600956459 /* KSMediaViewerPictureCell.swift */,
+				2800362F232E7AE600956459 /* KSMediaPickerView.swift */,
+				28003630232E7AE600956459 /* KSMediaPickerHandlerCollectionView.m */,
+				28003631232E7AE600956459 /* KSMediaPickerNavigationView.swift */,
+				28003632232E7AE600956459 /* KSMediaPickerHandlerBaseCell.swift */,
+				28003633232E7AE600956459 /* KSMediaPickerViewerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28003634232E7AE600956459 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				28003635232E7AE600956459 /* BaiduMapAPI */,
+				2800363B232E7AE600956459 /* LocationTools */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		28003635232E7AE600956459 /* BaiduMapAPI */ = {
+			isa = PBXGroup;
+			children = (
+				28003636232E7AE600956459 /* libcrypto.a */,
+				28003637232E7AE600956459 /* BMKLocationkit.framework */,
+				28003638232E7AE600956459 /* BaiduMapAPI_Base.framework */,
+				28003639232E7AE600956459 /* libssl.a */,
+				2800363A232E7AE600956459 /* BaiduMapAPI_Search.framework */,
+			);
+			path = BaiduMapAPI;
+			sourceTree = "<group>";
+		};
+		2800363B232E7AE600956459 /* LocationTools */ = {
+			isa = PBXGroup;
+			children = (
+				2800363C232E7AE600956459 /* KSPoiSearch.m */,
+				2800363D232E7AE600956459 /* KSGeoCodeSearch.m */,
+				2800363E232E7AE600956459 /* KSLocationManager.m */,
+				2800363F232E7AE600956459 /* KSPoiSearch.h */,
+				28003640232E7AE600956459 /* KSLocationManager.h */,
+				28003641232E7AE600956459 /* KSGeoCodeSearch.h */,
+			);
+			path = LocationTools;
+			sourceTree = "<group>";
+		};
+		28003642232E7AE600956459 /* KSSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				28003643232E7AE600956459 /* KSSegmentedControl.h */,
+				28003644232E7AE600956459 /* KSSegmentedControl.m */,
+			);
+			path = KSSegmentedControl;
+			sourceTree = "<group>";
+		};
+		28003646232E7AE600956459 /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+				28003647232E7AE600956459 /* Controller */,
+				2800364A232E7AE600956459 /* Model */,
+				2800364D232E7AE600956459 /* View */,
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		28003647232E7AE600956459 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				28003648232E7AE600956459 /* KSPublishViewController.h */,
+				28003649232E7AE600956459 /* KSPublishViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2800364A232E7AE600956459 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2800364B232E7AE600956459 /* KSPublishViewUploadModel.m */,
+				2800364C232E7AE600956459 /* KSPublishViewUploadModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2800364D232E7AE600956459 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2800364E232E7AE600956459 /* KSPublishViewPictureCell.m */,
+				2800364F232E7AE600956459 /* KSPublishView.m */,
+				28003650232E7AE600956459 /* KSPublishViewPictureCell.h */,
+				28003651232E7AE600956459 /* KSPublishView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28003652232E7AE600956459 /* KSMediaViewer */ = {
+			isa = PBXGroup;
+			children = (
+				28003653232E7AE600956459 /* Controller */,
+				28003656232E7AE600956459 /* Model */,
+				28003659232E7AE600956459 /* View */,
+			);
+			path = KSMediaViewer;
+			sourceTree = "<group>";
+		};
+		28003653232E7AE600956459 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				28003654232E7AE600956459 /* KSMediaViewerController.m */,
+				28003655232E7AE600956459 /* KSMediaViewerController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		28003656232E7AE600956459 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28003657232E7AE600956459 /* KSMediaViewerTransition.h */,
+				28003658232E7AE600956459 /* KSMediaViewerTransition.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28003659232E7AE600956459 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2800365A232E7AE600956459 /* KSMediaViewerCell.m */,
+				2800365B232E7AE600956459 /* KSMediaViewerView.m */,
+				2800365C232E7AE600956459 /* KSMediaViewerCell.h */,
+				2800365D232E7AE600956459 /* KSMediaViewerView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2800365F232E7AE600956459 /* KSAddMarkLabelController */ = {
+			isa = PBXGroup;
+			children = (
+				28003660232E7AE600956459 /* KSAddMarkLabelController.swift */,
+				28003661232E7AE600956459 /* KSAddMarkLabelSearchView.swift */,
+			);
+			path = KSAddMarkLabelController;
 			sourceTree = "<group>";
 		};
 		284C90C523126FFA0026293F /* MyPhoto */ = {
@@ -3075,6 +3471,7 @@
 		C5A961A8229BC226003439FA /* Portrait */ = {
 			isa = PBXGroup;
 			children = (
+				280035FF232E7AE600956459 /* PostPortrait */,
 				28F9DCCE2322AD3A00B2FBEB /* personPortrait */,
 				284C913E231D51730026293F /* CutView */,
 				C5A961A9229BC226003439FA /* Other */,
@@ -3507,6 +3904,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C524D48522D39A2000C4215F /* HomeListService.m in Sources */,
+				2800368A232E7AE600956459 /* KSPoiSearch.m in Sources */,
 				C5506985229AD8A7003DE6AD /* UIWebView+TS_JavaScriptContext.m in Sources */,
 				C50A39D9229C150900D31E2F /* GCDAsyncUdpSocket.m in Sources */,
 				C55069C5229B7277003DE6AD /* YoUIHelper.m in Sources */,
@@ -3519,6 +3917,8 @@
 				28FDAF7022FB05C300023417 /* YoNetWorkTool.m in Sources */,
 				28FF298522FDBBAD007D6DD4 /* YoUserInfoNetrequestService.m in Sources */,
 				C543B45C22A5767C00A0E4FE /* YoCityTablePickerView.m in Sources */,
+				28003666232E7AE600956459 /* KSTextMarksBrowseController.swift in Sources */,
+				2800367C232E7AE600956459 /* KSMediaPickerPreviewView.swift in Sources */,
 				C502D6D522A7A08D008F68C4 /* CheckThirdRegService.m in Sources */,
 				284C912D23169F560026293F /* UIColor+YoHEX.m in Sources */,
 				284C91372317B6F20026293F /* YoOrderModel.m in Sources */,
@@ -3540,13 +3940,17 @@
 				C548462922EC5040002310D2 /* HXPhotoView.m in Sources */,
 				C5187DE722BF6A16003DEF76 /* YoPublishViewController.m in Sources */,
 				F7C2D11622A02239009D317C /* YoHotViewController.m in Sources */,
+				2800367E232E7AE600956459 /* KSMediaPickerViewAlbumCell.swift in Sources */,
 				284C90E3231665AD0026293F /* YoCreatOrderService.m in Sources */,
+				2800368C232E7AE600956459 /* KSLocationManager.m in Sources */,
 				280035DD232A8E2400956459 /* EaseUserCell.m in Sources */,
+				28003677232E7AE600956459 /* KSMediaPickerCollectionView.m in Sources */,
 				C548461022EC503F002310D2 /* NSString+HXExtension.m in Sources */,
 				C54D8C0222E3595000886EE7 /* YoBlacklistModel.m in Sources */,
 				F7A3F84822CC502C0021452F /* YoPortraitCommentService.m in Sources */,
 				28003588232A8E2400956459 /* EaseEmotionEscape.m in Sources */,
 				280035E4232A8E2400956459 /* EaseImageView.m in Sources */,
+				28003682232E7AE600956459 /* KSMediaPickerNavigationView.swift in Sources */,
 				F7C8D46F22B7630400ED2368 /* YoMineUploadCollectionViewCell.m in Sources */,
 				C500D68B22A008B8007ACCBC /* SMSCodeService.m in Sources */,
 				280035A5232A8E2400956459 /* EMVoiceConverter.mm in Sources */,
@@ -3566,9 +3970,11 @@
 				C50BF40122A1A6EF000B26FD /* YoMineHeaderView.m in Sources */,
 				C548461122EC503F002310D2 /* UIViewController+HXExtension.m in Sources */,
 				C548462322EC5040002310D2 /* HXPhotoViewController.m in Sources */,
+				28003671232E7AE600956459 /* KSMediaPickerController.swift in Sources */,
 				C548460E22EC503F002310D2 /* HXPhotoPersentInteractiveTransition.m in Sources */,
 				C507C135229FCCBA000F8496 /* YoChooseSexViewController.m in Sources */,
 				C50A39DA229C150900D31E2F /* GCDAsyncSocket.m in Sources */,
+				2800368B232E7AE600956459 /* KSGeoCodeSearch.m in Sources */,
 				C548462E22EC5040002310D2 /* HXAlbumlistView.m in Sources */,
 				C524D48422CF89F500C4215F /* OnlineStatusService.m in Sources */,
 				C5049D3A22A6946900218631 /* YoCityPickerView.m in Sources */,
@@ -3578,6 +3984,7 @@
 				F7C8D48222B7830100ED2368 /* YoMinePickerViewManager.m in Sources */,
 				F7A3F86222CD98970021452F /* GKPhoto.m in Sources */,
 				280035F8232B34FC00956459 /* YoSingleChatViewController.m in Sources */,
+				2800368E232E7AE600956459 /* KSPublishViewController.m in Sources */,
 				280035ED232A8E2400956459 /* EaseBubbleView+File.m in Sources */,
 				28003583232A8E2400956459 /* FixFopen.c in Sources */,
 				C502D6CF22A6C6CF008F68C4 /* YoTool.m in Sources */,
@@ -3585,11 +3992,13 @@
 				C548463322EC5040002310D2 /* HXDatePhotoToolManager.m in Sources */,
 				280035B9232A8E2400956459 /* PSTCollectionViewCell.m in Sources */,
 				280035E7232A8E2400956459 /* EaseTextView.m in Sources */,
+				28003695232E7AE600956459 /* KSMediaViewerView.m in Sources */,
 				C548465C22EEF3FE002310D2 /* EvaluateService.m in Sources */,
 				280035AE232A8E2400956459 /* MWCaptionView.m in Sources */,
 				C550697A229AD8A7003DE6AD /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */,
 				F7A3F86522CD98970021452F /* UIImage+GKDecoder.m in Sources */,
 				280035B7232A8E2400956459 /* PSTCollectionViewController.m in Sources */,
+				2800367F232E7AE600956459 /* KSMediaViewerPictureCell.swift in Sources */,
 				C541136822C3C8A10059C4E0 /* YoNewsDetailCell.m in Sources */,
 				C55069B8229B707A003DE6AD /* YoCommonViewController.m in Sources */,
 				F7A3F83F22CA5FF80021452F /* YoAuthenticationViewController.m in Sources */,
@@ -3606,6 +4015,7 @@
 				C527E21022E5D8E6008F5E19 /* YoBaseEvaluateView.m in Sources */,
 				C548462122EC5040002310D2 /* HXPhotoPreviewViewController.m in Sources */,
 				C548460D22EC503F002310D2 /* HXPhotoViewPresentTransition.m in Sources */,
+				28003672232E7AE600956459 /* KSMediaPickerViewerController.swift in Sources */,
 				280035DE232A8E2400956459 /* EaseConversationCell.m in Sources */,
 				C548462A22EC5040002310D2 /* HXFullScreenCameraPlayView.m in Sources */,
 				C548465822EDFF38002310D2 /* YoMineHeaderModel.m in Sources */,
@@ -3630,10 +4040,14 @@
 				F7A3F85E22CD98970021452F /* GKLoadingView.m in Sources */,
 				C550698D229AD8A8003DE6AD /* KeyChainStore.m in Sources */,
 				280035B1232A8E2400956459 /* MWTapDetectingImageView.m in Sources */,
+				28003694232E7AE600956459 /* KSMediaViewerCell.m in Sources */,
+				28003696232E7AE600956459 /* KSAddMarkLabelController.swift in Sources */,
 				C55069CB229B7CBC003DE6AD /* YoCommonUI.m in Sources */,
 				C548463222EC5040002310D2 /* HXPhotoEditViewController.m in Sources */,
+				28003691232E7AE600956459 /* KSPublishView.m in Sources */,
 				F7FF626C22A610A200F7C236 /* YoPortraitModel.m in Sources */,
 				C55069B2229AF427003DE6AD /* GVUserDefaults.m in Sources */,
+				28003692232E7AE600956459 /* KSMediaViewerController.m in Sources */,
 				280035EC232A8E2400956459 /* EaseBubbleView+Location.m in Sources */,
 				C507C12F229F8370000F8496 /* YoInputTextView.m in Sources */,
 				C548460922EC503F002310D2 /* HXDownloadProgressView.m in Sources */,
@@ -3642,6 +4056,7 @@
 				280035C1232A8E2400956459 /* PSTGridLayoutRow.m in Sources */,
 				F7A9645622AB87AE0067BF50 /* YoPortraitCreaeteViewController.m in Sources */,
 				280035B5232A8E2400956459 /* MWGridCell.m in Sources */,
+				2800366D232E7AE600956459 /* KSTriangleIndicatorButton.m in Sources */,
 				280035BB232A8E2400956459 /* PSTCollectionViewData.m in Sources */,
 				C548465522EDF471002310D2 /* LookPermitService.m in Sources */,
 				C50BF3FD22A1A5B2000B26FD /* XLPageTitleCell.m in Sources */,
@@ -3661,6 +4076,7 @@
 				F7A3F86022CD98970021452F /* GKScrollView.m in Sources */,
 				C50AF6C122C1256E002C5E06 /* YoDatePickerView.m in Sources */,
 				C550697E229AD8A7003DE6AD /* NSDictionary+Extension.m in Sources */,
+				28003683232E7AE600956459 /* KSMediaPickerHandlerBaseCell.swift in Sources */,
 				C548460622EC503F002310D2 /* HXCustomCameraViewController.m in Sources */,
 				C550698A229AD8A8003DE6AD /* UITabBar+Badge.m in Sources */,
 				C548461522EC503F002310D2 /* UIFont+HXExtension.m in Sources */,
@@ -3671,7 +4087,9 @@
 				C5506982229AD8A7003DE6AD /* NSString+Extension.m in Sources */,
 				F7A58C5A22AE3B2F0045620E /* YoPortraitCommentDetailsViewController.m in Sources */,
 				F7C2D11922A0226E009D317C /* YoSecretaryViewController.m in Sources */,
+				28003667232E7AE600956459 /* KSMarksBrowseModel.swift in Sources */,
 				C55069DA229B823F003DE6AD /* LoginService.m in Sources */,
+				2800366F232E7AE600956459 /* KSTriangleDisclosureIndicator.m in Sources */,
 				284C90E0231664140026293F /* YoVIPConfigService.m in Sources */,
 				280035BC232A8E2400956459 /* NSIndexPath+PSTCollectionViewAdditions.m in Sources */,
 				C50BF3E722A1728D000B26FD /* YoSinglePickerView.m in Sources */,
@@ -3681,6 +4099,7 @@
 				C527E21322E60BF2008F5E19 /* YoWithDrawRulesViewController.m in Sources */,
 				2800357E232A8E2400956459 /* UIViewController+HUD.m in Sources */,
 				C548460B22EC503F002310D2 /* HXPhotoEditTransition.m in Sources */,
+				28003693232E7AE600956459 /* KSMediaViewerTransition.m in Sources */,
 				C541135C22C3BC8B0059C4E0 /* YoMessageSettingViewController.m in Sources */,
 				C5FFD0D022BFCFF400E910DE /* YoPublishPickerCell.m in Sources */,
 				F7A9641722AB5B1D0067BF50 /* ZYTagImageView.m in Sources */,
@@ -3691,6 +4110,7 @@
 				F7C8D46922B7342100ED2368 /* YoMineBindPhoneController.m in Sources */,
 				F710CFAE22C798CB005D4C4B /* YoUploadManager.m in Sources */,
 				F7CC663422B8E01D00A3C7EA /* YoMinePhotoPickerView.m in Sources */,
+				28003670232E7AE600956459 /* KSMediaPickerHandlerController.swift in Sources */,
 				C548466422EF1CF7002310D2 /* RechargeVC.m in Sources */,
 				284C90C1231032670026293F /* YoMinePhotoOnce.m in Sources */,
 				C550697F229AD8A7003DE6AD /* NSString+RegularExpression.m in Sources */,
@@ -3706,8 +4126,11 @@
 				C50BF3EB22A185BE000B26FD /* YoTwoRowPickerView.m in Sources */,
 				280035DC232A8E2400956459 /* EaseViewController.m in Sources */,
 				C548447E22EC2862002310D2 /* UploadImageService.m in Sources */,
+				28003674232E7AE600956459 /* KSMediaPickerItemModel.swift in Sources */,
 				280035DB232A8E2400956459 /* EaseMessageViewController.m in Sources */,
+				28003690232E7AE600956459 /* KSPublishViewPictureCell.m in Sources */,
 				C55069CE229B7E5B003DE6AD /* QMUIConfigurationTemplateDefault.m in Sources */,
+				28003676232E7AE600956459 /* KSMediaPickerHandlerNavigationView.swift in Sources */,
 				280035D5232A8E2400956459 /* MBProgressHUD.m in Sources */,
 				C548461F22EC5040002310D2 /* HXAlbumListViewController.m in Sources */,
 				280035D8232A8E2400956459 /* EaseConversationListViewController.m in Sources */,
@@ -3731,8 +4154,11 @@
 				280035B2232A8E2400956459 /* MWPhoto.m in Sources */,
 				C503EF99229AD300001E69BD /* main.m in Sources */,
 				280035D7232A8E2400956459 /* EaseLocationViewController.m in Sources */,
+				28003679232E7AE600956459 /* KSMediaPickerCameraView.swift in Sources */,
 				C548462622EC5040002310D2 /* HXCustomCameraController.m in Sources */,
 				280035A6232A8E2400956459 /* EMCDDeviceManager+Remind.m in Sources */,
+				2800368F232E7AE600956459 /* KSPublishViewUploadModel.m in Sources */,
+				28003681232E7AE600956459 /* KSMediaPickerHandlerCollectionView.m in Sources */,
 				C550697B229AD8A7003DE6AD /* UIBarButtonItem+Badge.m in Sources */,
 				C548462C22EC5040002310D2 /* HXPhotoSubViewCell.m in Sources */,
 				280035F2232A8E2400956459 /* EaseBubbleView+Gif.m in Sources */,
@@ -3743,6 +4169,7 @@
 				2800358A232A8E2400956459 /* EaseEmotionManager.m in Sources */,
 				280035F3232A8E2400956459 /* EaseSDKHelper.m in Sources */,
 				F7FF626922A3C9F400F7C236 /* YoPortraitService.m in Sources */,
+				2800366C232E7AE600956459 /* KSButton.swift in Sources */,
 				280035EA232A8E2400956459 /* EaseChatToolbarItem.m in Sources */,
 				C5506997229AD8A8003DE6AD /* AppDelegate.m in Sources */,
 				284C90BE230ED0AD0026293F /* YoPhotoBroweService.m in Sources */,
@@ -3757,7 +4184,9 @@
 				C541136222C3C6630059C4E0 /* YoNewDetailViewController.m in Sources */,
 				280035DF232A8E2400956459 /* EaseMessageTimeCell.m in Sources */,
 				C55069A4229AF34C003DE6AD /* JSUrlArgumentsFilter.m in Sources */,
+				28003684232E7AE600956459 /* KSMediaPickerViewerView.swift in Sources */,
 				C55069E9229BB8A5003DE6AD /* YoTabBarViewController.m in Sources */,
+				2800366E232E7AE600956459 /* KSIndicatorLabelControl.m in Sources */,
 				F7A3F86322CD98970021452F /* GKWebImageManager.m in Sources */,
 				284C90CA231270EB0026293F /* YoMyPhotoService.m in Sources */,
 				C5070C0622A8FA570020FDA2 /* YoDialogViewController.m in Sources */,
@@ -3777,6 +4206,7 @@
 				C5073B53229C3F1700C810DA /* YoConversationCell.m in Sources */,
 				28B23357230045DD004678F2 /* YoBigImageViewViewController.m in Sources */,
 				C548463722EDA72E002310D2 /* AuthService.m in Sources */,
+				2800367A232E7AE600956459 /* KSMediaPickerCameraToolBar.swift in Sources */,
 				280035A3232A8E2400956459 /* wav.mm in Sources */,
 				F7FF626F22A6632D00F7C236 /* YoPortraitPersonalViewController.m in Sources */,
 				C548461922EC503F002310D2 /* NSTimer+HXExtension.m in Sources */,
@@ -3786,9 +4216,12 @@
 				C5506A0D229BBC54003DE6AD /* YoHomeViewController.m in Sources */,
 				280035AA232A8E2400956459 /* EMAudioRecorderUtil.m in Sources */,
 				C50434FF22A7E4A50038800C /* ForgetPwdService.m in Sources */,
+				28003680232E7AE600956459 /* KSMediaPickerView.swift in Sources */,
+				28003698232E7AE600956459 /* KSExtension.swift in Sources */,
 				F7A9645922AB8C040067BF50 /* YoPortraitCreateCell.m in Sources */,
 				C548464022EDD4A5002310D2 /* BlackHandlerService.m in Sources */,
 				280035E5232A8E2400956459 /* EaseFacialView.m in Sources */,
+				2800367D232E7AE600956459 /* KSMediaPickerSelectIndicator.swift in Sources */,
 				C5506A07229BBC31003DE6AD /* YoMessageViewController.m in Sources */,
 				F7A3F85F22CD98970021452F /* UIScrollView+GKGestureHandle.m in Sources */,
 				C5575CCF22A0D0A500594F88 /* YoBaseInfoTagView.m in Sources */,
@@ -3800,13 +4233,17 @@
 				F7B4DBB422B247CB0091B108 /* YoMemberController.m in Sources */,
 				280035E8232A8E2400956459 /* EaseChatToolbar.m in Sources */,
 				C5506993229AD8A8003DE6AD /* BaseViewController.m in Sources */,
+				2800366B232E7AE600956459 /* KSBorderButton.swift in Sources */,
 				28003580232A8E2400956459 /* NSString+Valid.m in Sources */,
+				2800367B232E7AE600956459 /* KSMediaPickerScrollView.m in Sources */,
 				C5506991229AD8A8003DE6AD /* Reachability.m in Sources */,
 				28B2336D23095E71004678F2 /* YoDataingAndNotificationController.m in Sources */,
 				28003589232A8E2400956459 /* EaseEmojiEmoticons.m in Sources */,
 				C5506988229AD8A7003DE6AD /* UIImage+Color.m in Sources */,
 				C548464622EDD7A9002310D2 /* FollowHandlerService.m in Sources */,
 				F7FF627522A6725100F7C236 /* YoPortraitPersonalService.m in Sources */,
+				28003669232E7AE600956459 /* KSPageControl.m in Sources */,
+				2800368D232E7AE600956459 /* KSSegmentedControl.m in Sources */,
 				C5AA833722F4939200F33F30 /* UserInfoService.m in Sources */,
 				F7BA573222B3355500DBD849 /* YoMemberBuyBottomView.m in Sources */,
 				F7FF627822A6755300F7C236 /* YoPortraitPersonalModel.m in Sources */,
@@ -3814,17 +4251,21 @@
 				C5506977229AD8A7003DE6AD /* NSDate+Utilities.m in Sources */,
 				F7A3F84222CA6FE10021452F /* YoReportViewController.m in Sources */,
 				F710CFC122C86B84005D4C4B /* YoOtherPhotoCell.m in Sources */,
+				28003678232E7AE600956459 /* KSMediaPickerViewImageCell.swift in Sources */,
 				28003581232A8E2400956459 /* UIViewController+DismissKeyboard.m in Sources */,
+				28003664232E7AE600956459 /* KSMarkLabel.swift in Sources */,
 				F710CFB822C84B1A005D4C4B /* YoOtherMaleViewController.m in Sources */,
 				C55069E6229B95BF003DE6AD /* MCTabBar.m in Sources */,
 				C5506978229AD8A7003DE6AD /* UIImage+Extension.m in Sources */,
 				F710CFBB22C84B2A005D4C4B /* YoOtherFemaleViewController.m in Sources */,
 				F7C2D12222A02D2D009D317C /* YoPortraitCollectionViewCell.m in Sources */,
 				280035E1232A8E2400956459 /* EaseMessageCell.m in Sources */,
+				28003663232E7AE600956459 /* KSGlobalTools.m in Sources */,
 				F79462F522C1C08500117E49 /* YoMineFemaleTableViewCell.m in Sources */,
 				284C9141231D51AC0026293F /* YoCutViewController.m in Sources */,
 				C5506A0A229BBC42003DE6AD /* YoAppointmentViewController.m in Sources */,
 				284C90C42312699B0026293F /* YoFiredBrowseService.m in Sources */,
+				28003668232E7AE600956459 /* KSMarksView.swift in Sources */,
 				280035A8232A8E2400956459 /* EMCDDeviceManager+Media.m in Sources */,
 				C50BF3FC22A1A5B2000B26FD /* XLPageViewControllerConfig.m in Sources */,
 				F7A9645322AB70B70067BF50 /* YoPortraitTagCell.m in Sources */,
@@ -3849,6 +4290,7 @@
 				280035C0232A8E2400956459 /* PSTCollectionView.m in Sources */,
 				C548462022EC5040002310D2 /* HXPhotoCustomNavigationBar.m in Sources */,
 				C500D6AA22A02C28007ACCBC /* YoBaseInfoCellView.m in Sources */,
+				28003697232E7AE600956459 /* KSAddMarkLabelSearchView.swift in Sources */,
 				C5070C1522AE48620020FDA2 /* YoHomeWomanAuthController.m in Sources */,
 				F7A3F86122CD98970021452F /* GKPhotoBrowser.m in Sources */,
 				280035F5232A8E2400956459 /* EaseUI.m in Sources */,
@@ -3861,6 +4303,7 @@
 				F7B4DBAB22B236020091B108 /* YoMineNormalCell.m in Sources */,
 				C5070C1E22AE4CEF0020FDA2 /* YoHomeListCell.m in Sources */,
 				F7C8D47B22B77A5800ED2368 /* YoMinePickerView.m in Sources */,
+				28003665232E7AE600956459 /* KSMarksBrowseView.swift in Sources */,
 				280035AF232A8E2400956459 /* MWZoomingScrollView.m in Sources */,
 				280035E9232A8E2400956459 /* EaseRecordView.m in Sources */,
 				280035EF232A8E2400956459 /* EaseBubbleView+Video.m in Sources */,
@@ -3870,8 +4313,10 @@
 				F7A58C5422ADF1190045620E /* YoPortraitCommentMultipleCell.m in Sources */,
 				C527E21C22E8A82F008F5E19 /* YoUserProtocolViewController.m in Sources */,
 				28003587232A8E2400956459 /* EaseEmoji.m in Sources */,
+				28003673232E7AE600956459 /* KSMediaPickerOutputModel.swift in Sources */,
 				280035BA232A8E2400956459 /* PSTGridLayoutInfo.m in Sources */,
 				28B2336623093F9E004678F2 /* YoSetPhotoStatuesTypeService.m in Sources */,
+				2800366A232E7AE600956459 /* KSGradientButton.swift in Sources */,
 				C5073B4F229C35B600C810DA /* YoConversationController.m in Sources */,
 				C548447B22EC2309002310D2 /* AuthCodeService.m in Sources */,
 				C548463422EC5040002310D2 /* HXVideoEditViewController.m in Sources */,
@@ -3891,6 +4336,7 @@
 				C5049D3222A614C400218631 /* UserStaticInfoService.m in Sources */,
 				C50BF3FA22A1A5B2000B26FD /* XLPageSegmentedTitleView.m in Sources */,
 				C54D8BFC22E3570800886EE7 /* YoMineBlacklistController.m in Sources */,
+				28003675232E7AE600956459 /* KSMediaPickerAlbumModel.swift in Sources */,
 				C504350222A800460038800C /* AppointmentListService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4058,6 +4504,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HDTM464B2;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Yoyo/Main/Portrait/PostPortrait/Location/BaiduMapAPI",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Yoyo/Resource/AppDelegate/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Yoyo/Resource/Plist/Info.plist";
@@ -4070,6 +4520,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Yoyo/Main/Chat/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb",
 					"$(PROJECT_DIR)/Yoyo/Main/Chat/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrnb",
+					"$(PROJECT_DIR)/Yoyo/Main/Portrait/PostPortrait/Location/BaiduMapAPI",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wjw.smsq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4085,6 +4536,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HDTM464B2;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Yoyo/Main/Portrait/PostPortrait/Location/BaiduMapAPI",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Yoyo/Resource/AppDelegate/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Yoyo/Resource/Plist/Info.plist";
@@ -4097,6 +4552,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Yoyo/Main/Chat/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb",
 					"$(PROJECT_DIR)/Yoyo/Main/Chat/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrnb",
+					"$(PROJECT_DIR)/Yoyo/Main/Portrait/PostPortrait/Location/BaiduMapAPI",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wjw.smsq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4108,6 +4564,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 38D5A3519CE2475658901561 /* Pods-YoyoTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7H6A533SLT;
@@ -4128,6 +4585,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 59BDC3D2579B750AFF31D2B3 /* Pods-YoyoTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7H6A533SLT;
@@ -4148,6 +4606,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F8EFB270222E98A7C284E04A /* Pods-YoyoUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7H6A533SLT;
 				INFOPLIST_FILE = YoyoUITests/Info.plist;
@@ -4167,6 +4626,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7F64BB54DB7D913FC1EFFC09 /* Pods-YoyoUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7H6A533SLT;
 				INFOPLIST_FILE = YoyoUITests/Info.plist;
