@@ -13,12 +13,12 @@
        NSInteger _size;
        NSString *_likeName;
 }
-- (id)initWithlikeName:(NSString *)likeName Current:(NSInteger)pageSize cityCodes:(NSInteger )pageIndex
+- (id)initWithlikeName:(NSString *)likeName Current:(NSInteger)current cityCodes:(NSInteger )pageIndex
 {
     self = [super init];
     if (self) {
-        _current = pageIndex;
-        _size = pageSize;
+        _current = current;
+        _size = pageIndex;
         _likeName = likeName;
     }
     return self;

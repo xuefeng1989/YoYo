@@ -125,7 +125,9 @@
         self.tableView.hidden = YES;
     }
 }
-
+- (void)handleRightBarButtonItemEvent {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 - (void)handleSearchBarItemEvent {
     self.fuzzyTableView.hidden = YES;
     self.tableView.hidden = NO;
