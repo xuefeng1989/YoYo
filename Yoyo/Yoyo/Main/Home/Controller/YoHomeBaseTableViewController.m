@@ -44,9 +44,6 @@ static CGFloat const kHomeUserCellHeight = 90;
             [model setValuesForKeysWithDictionary:dic];
              [self.dataArray addObject:model];
         }
-//        for (YoHomeListModel *model in [YoHomeListModel mj_objectArrayWithKeyValuesArray:[data objectForKey:@"list"]]) {
-//            [self.dataArray addObject:model];
-//        }
         [self tableViewDidFinishTriggerHeader:YES reload:YES];
     } failure:^(JSError *error) {
         [self tableViewDidFinishTriggerHeader:YES reload:NO];

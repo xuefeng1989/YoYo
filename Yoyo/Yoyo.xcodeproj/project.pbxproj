@@ -233,6 +233,7 @@
 		28B233602309327F004678F2 /* YoHomeBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B2335F2309327F004678F2 /* YoHomeBaseTableViewController.m */; };
 		28B2336623093F9E004678F2 /* YoSetPhotoStatuesTypeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B2336523093F9E004678F2 /* YoSetPhotoStatuesTypeService.m */; };
 		28B2336D23095E71004678F2 /* YoDataingAndNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B2336C23095E71004678F2 /* YoDataingAndNotificationController.m */; };
+		28F7A8F4232FCB7E009A76DB /* YoHomeSearchService.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F7A8F3232FCB7D009A76DB /* YoHomeSearchService.m */; };
 		28FDAF7022FB05C300023417 /* YoNetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FDAF6F22FB05C300023417 /* YoNetWorkTool.m */; };
 		28FF298522FDBBAD007D6DD4 /* YoUserInfoNetrequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FF298422FDBBAD007D6DD4 /* YoUserInfoNetrequestService.m */; };
 		4E9CA8AE625A45A5847BFF76 /* libPods-YoyoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3043596F5C91E3F50B0D63BB /* libPods-YoyoUITests.a */; };
@@ -868,6 +869,8 @@
 		28B2336523093F9E004678F2 /* YoSetPhotoStatuesTypeService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YoSetPhotoStatuesTypeService.m; sourceTree = "<group>"; };
 		28B2336B23095E71004678F2 /* YoDataingAndNotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YoDataingAndNotificationController.h; sourceTree = "<group>"; };
 		28B2336C23095E71004678F2 /* YoDataingAndNotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YoDataingAndNotificationController.m; sourceTree = "<group>"; };
+		28F7A8F2232FCB7D009A76DB /* YoHomeSearchService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YoHomeSearchService.h; sourceTree = "<group>"; };
+		28F7A8F3232FCB7D009A76DB /* YoHomeSearchService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YoHomeSearchService.m; sourceTree = "<group>"; };
 		28FDAF6E22FB05C300023417 /* YoNetWorkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YoNetWorkTool.h; sourceTree = "<group>"; };
 		28FDAF6F22FB05C300023417 /* YoNetWorkTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YoNetWorkTool.m; sourceTree = "<group>"; };
 		28FF298322FDBBAD007D6DD4 /* YoUserInfoNetrequestService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YoUserInfoNetrequestService.h; sourceTree = "<group>"; };
@@ -2632,6 +2635,8 @@
 				C524D47822CE68C200C4215F /* HomeListService.m */,
 				284C90C22312699B0026293F /* YoFiredBrowseService.h */,
 				284C90C32312699B0026293F /* YoFiredBrowseService.m */,
+				28F7A8F2232FCB7D009A76DB /* YoHomeSearchService.h */,
+				28F7A8F3232FCB7D009A76DB /* YoHomeSearchService.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -4142,6 +4147,7 @@
 				C548461322EC503F002310D2 /* NSBundle+HXPhotoPicker.m in Sources */,
 				C548462722EC5040002310D2 /* HXCustomCollectionReusableView.m in Sources */,
 				C550698B229AD8A8003DE6AD /* NSArray+ ZXPUnicode.m in Sources */,
+				28F7A8F4232FCB7E009A76DB /* YoHomeSearchService.m in Sources */,
 				C5506979229AD8A7003DE6AD /* NSObject+ZXPUnicode.m in Sources */,
 				C5506986229AD8A7003DE6AD /* UIBarButtonItem+Extension.m in Sources */,
 				280035D6232A8E2400956459 /* MBProgressHUD+Add.m in Sources */,

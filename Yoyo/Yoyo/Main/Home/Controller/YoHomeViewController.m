@@ -36,9 +36,6 @@
     if (YoUserDefault.sex == YoSexTypeWoman) {
         self.titleArray = @[@"普通男士",@"VIP男士"];
     }
-    
-    
-    
     SGPageTitleViewConfigure *configure = [SGPageTitleViewConfigure pageTitleViewConfigure];
     configure.bottomSeparatorColor = UIColorSeparator;
     configure.showBottomSeparator = YES;
@@ -48,12 +45,9 @@
     configure.titleSelectedColor = UIColorGlobal;
     configure.indicatorStyle = SGIndicatorStyleDefault;
     configure.indicatorColor = UIColorGlobal;
-    
-    
     self.pageTitleView = [SGPageTitleView pageTitleViewWithFrame:CGRectMake(0, NavigationContentTop, self.view.frame.size.width, 44) delegate:self titleNames:self.titleArray configure:configure];
     [self.view addSubview:_pageTitleView];
     _pageTitleView.selectedIndex = 0;
-    
     YoHomeBaseTableViewController *nearVc = [[YoHomeBaseTableViewController alloc] init];
     nearVc.listDataType = YoHomeTypeWomanNear;
     YoHomeBaseTableViewController *newVc = [[YoHomeBaseTableViewController alloc] init];
@@ -64,11 +58,10 @@
     YoHomeBaseTableViewController *nomalVc = [[YoHomeBaseTableViewController alloc] init];
     nomalVc.listDataType = YoHomeTypeManNomal;
     YoHomeBaseTableViewController *vipVc = [[YoHomeBaseTableViewController alloc] init];
-     vipVc.listDataType = YoHomeTypeManVip;
+    vipVc.listDataType = YoHomeTypeManVip;
     if (YoUserDefault.sex == YoSexTypeWoman) {
         childArr = @[nomalVc, vipVc];
     }
-    /// pageContentScrollView
     CGFloat contentViewHeight = self.view.frame.size.height - CGRectGetMaxY(_pageTitleView.frame);
     self.pageContentScrollView = [[SGPageContentScrollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_pageTitleView.frame), self.view.frame.size.width, contentViewHeight) parentVC:self childVCs:childArr];
     _pageContentScrollView.delegatePageContentScrollView = self;
@@ -80,7 +73,6 @@
     
     UIView *titleView = [[UIView alloc] init];
     titleView.frame = CGRectMake(0, 0, self.view.qmui_width - (44 + 25), 36);
-    
     QMUIButton *btn = [QMUIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = titleView.bounds;
     [btn setImage:UIImageMake(@"icon_nav_title_search") forState:UIControlStateNormal];

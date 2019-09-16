@@ -12,7 +12,6 @@
 - (NSString *)requestUrl {
     return @"v1/user/photo/browse";
 }
-
 - (YTKRequestMethod)requestMethod {
     return YTKRequestMethodDELETE;
 }

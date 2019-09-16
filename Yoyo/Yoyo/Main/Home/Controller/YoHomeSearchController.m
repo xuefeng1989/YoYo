@@ -7,10 +7,11 @@
 //
 
 #import "YoHomeSearchController.h"
-
 #import "YoHomeListCell.h"
-
 #import "Const.h"
+#import "YoHomeSearchService.h"
+#import "YoHomeListModel.h"
+#import "YoOtherFemaleViewController.h"
 
 @interface YoHomeSearchController () <UISearchBarDelegate, QMUITableViewDelegate, QMUITableViewDataSource>
 @property(nonatomic, strong) QMUISearchBar *searchBar;
@@ -25,44 +26,34 @@
 
 - (void)initSubviews {
     [super initSubviews];
-    
-    self.tableView.backgroundColor = UIColorRed;
-    
-    
-    self.dataArray = @[@"1",@"2",@"3",@"1",@"2",@"3",@"1",@"2",@"3"];
-    
-    self.nicknameDataArray =  @[@"昆明淤青",@"云青",@"雨晴",@"吁请",@"玉清",@"余庆"];
-
+    self.tableView.backgroundColor = [UIColor whiteColor];
 }
-
 
 - (void)setupNavigationItems {
     [super setupNavigationItems];
-    
-
     UIView *titleView = [[UIView alloc] init];
     titleView.frame = CGRectMake(0, 0, self.view.qmui_width - (44 + 25), 36);
-    titleView.backgroundColor = UIColorRed;
+    titleView.backgroundColor = [UIColor whiteColor];
     
     self.searchBar = [[QMUISearchBar alloc] init];
     self.searchBar.frame = titleView.bounds;
     self.searchBar.placeholder = @"输入昵称搜索";
     self.searchBar.qmui_textField.font = UIFontMake(13);
-    //    self.searchBar.backgroundColor = UIColorGrayBackGround1;
     self.searchBar.delegate = self;
     self.searchBar.qmui_textFieldMargins = UIEdgeInsetsMake(-4, -8, -4, -8);
     self.searchBar.layer.cornerRadius = 10;
     self.searchBar.layer.masksToBounds = YES;
     [titleView addSubview:self.searchBar];
     self.navigationItem.titleView = titleView;
-    
-    
     self.navigationItem.leftBarButtonItem = nil;
 
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem qmui_itemWithImage:[UIImageMake(@"icon_search_right_nav_close") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] target:self action:@selector(handleRightBarButtonItemEvent)];
 
 }
 
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+    [self handleSearchBarItemEvent];
+}
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (tableView == self.tableView) {
@@ -77,7 +68,7 @@
     
     if (tableView == self.tableView) {
         YoHomeListCell *cell = [YoHomeListCell cellWithTableView:tableView];
-        cell.data = self.dataArray[indexPath.row];
+        cell.model = self.dataArray[indexPath.row];
         return cell;
     } else {
         QMUITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
@@ -111,7 +102,10 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
     if (tableView == self.tableView) {
-        
+        YoOtherFemaleViewController *detailVc = [[YoOtherFemaleViewController alloc] init];
+        YoHomeListModel *model = (YoHomeListModel *)self.dataArray[indexPath.row];
+        detailVc.userNo = [NSString stringWithFormat:@"%ld",model.userNo];
+        [self.navigationController pushViewController:detailVc animated:YES];
     } else {
         self.fuzzyTableView.hidden = YES;
         self.tableView.hidden = NO;
@@ -121,10 +115,6 @@
     }
     
 }
-
-
-
-
 #pragma mark - UISearchBarDelegate
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
     if (searchText.length == 0) {
@@ -136,13 +126,26 @@
     }
 }
 
-
-
-
-
-
-- (void)handleRightBarButtonItemEvent {
-    [self dismissViewControllerAnimated:YES completion:nil];
+- (void)handleSearchBarItemEvent {
+    self.fuzzyTableView.hidden = YES;
+    self.tableView.hidden = NO;
+    YoHomeSearchService *service = [[YoHomeSearchService alloc] initWithlikeName:self.searchBar.text Current:1 cityCodes:50];
+    [service js_startWithCompletionBlockWithSuccess:^(YTKBaseRequest *request) {
+        [self.dataArray removeAllObjects];
+        
+        NSDictionary *data = [request.responseJSONObject objectForKey:@"result"];
+        NSArray *dataList = data[@"list"];
+        for (NSDictionary *dic in dataList) {
+            YoHomeListModel *model = [[YoHomeListModel alloc] init];
+            [model setValuesForKeysWithDictionary:dic];
+            [self.dataArray addObject:model];
+        }
+        [self tableViewDidFinishTriggerHeader:YES reload:YES];
+    } failure:^(JSError *error) {
+        [self tableViewDidFinishTriggerHeader:YES reload:NO];
+        [QMUITips showError:error.errorDescription inView:self.view hideAfterDelay:1.5];
+    }];
+    [self.searchBar resignFirstResponder];
 }
 
 
@@ -151,7 +154,7 @@
         _fuzzyTableView = [[QMUITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _fuzzyTableView.dataSource = self;
         _fuzzyTableView.delegate = self;
-        _fuzzyTableView.backgroundColor = UIColorRed;
+        _fuzzyTableView.backgroundColor = [UIColor whiteColor];
         [self.view addSubview:_fuzzyTableView];
     }
     return _fuzzyTableView;
