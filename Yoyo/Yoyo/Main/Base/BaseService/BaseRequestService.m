@@ -32,6 +32,7 @@
     NSString *lng = [NSString stringWithFormat:@"%lf", YoUserDefault.longitude];
     [dict setValue:lat  forKey:@"lat"];
     [dict setValue:lng forKey:@"lon"];
+    [dict setValue:YoUserDefault.city forKey:@"city_name"];
     [dict setValue:[KeyChainStore getUUID] forKey:@"device_id"];
     NSString *loginData = [dict mj_JSONString];
     

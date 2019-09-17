@@ -184,7 +184,7 @@
 - (void)setEffectView{
     _effect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
     _effectView = [[UIVisualEffectView alloc] initWithEffect:_effect];
-    _effectView.alpha = 0.9;
+    _effectView.alpha = 1.0;
     _effectView.frame = CGRectMake(0, 0, self.imageView.frame.size.width, self.imageView.frame.size.height);
     self.redImage.frame = CGRectMake((GKScreenW - 45) / 2,(self.imageView.frame.size.height - 50)/ 2 -45 , 45, 45);
     self.labelRed.frame = CGRectMake(0,(self.imageView.frame.size.height - 50)/ 2, GKScreenW, 20);
