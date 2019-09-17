@@ -120,6 +120,7 @@ CGFloat const HeaderImageViewHeight = 240;
 {
     if (!_photoView) {
         _photoView = [[YoPhotoViewController alloc] init];
+        _photoView.view.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - HeaderImageViewHeight);
         __weak __typeof(self)weakSelf = self;
         [_photoView setBlock:^(NSString * _Nonnull text) {
             weakSelf.topTitleLabel.text = text;

@@ -15,6 +15,7 @@
 @property (nonatomic, strong) UIImageView *coverImageView;
 @property (nonatomic, strong) UIVisualEffectView *blurEffect;
 @property (nonatomic, strong) UILabel *titleL;
+@property (nonatomic, strong) UIImageView *coverImage;
 @end
 
 @implementation YoMineUploadCollectionViewCell
@@ -36,7 +37,10 @@
         [self.coverImageView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.top.right.bottom.mas_equalTo(self.contentView);
         }];
-        
+        [self.contentView addSubview:self.coverImage];
+        [self.coverImage mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.top.right.bottom.mas_equalTo(self.contentView);
+        }];
         [self.contentView addSubview:self.titleL];
         [self.titleL mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.centerY.mas_equalTo(self.contentView);
@@ -54,15 +58,31 @@
             self.coverImageView.hidden = YES;
             self.titleL.text = @"付费照片";
             self.titleL.textColor = UIColorWhite;
+            if (_isSelf) {
+                self.coverImage.hidden = NO;
+                self.coverImage.image = [UIImage imageNamed:@"yo_photo_pay"];
+                self.titleL.hidden = YES;
+            }else{
+                self.coverImage.hidden = YES;
+                self.titleL.hidden = NO;
+            }
             break;
         case YoMineUploadCollectionViewCellTypeFire:
             self.blurEffect.hidden = NO;
-            self.titleL.hidden = NO;
             self.coverImageView.hidden = YES;
             self.titleL.text = @"阅后即焚";
             self.titleL.textColor = UIColorWhite;
+            if (_isSelf) {
+                self.coverImage.hidden = NO;
+                self.coverImage.image = [UIImage imageNamed:@"yo_photo_fired"];
+                self.titleL.hidden = YES;
+            }else{
+                self.coverImage.hidden = YES;
+                self.titleL.hidden = NO;
+            }
             break;
         case YoMineUploadCollectionViewCellTypeFireReaded:
+            self.coverImage.hidden = YES;
             self.blurEffect.hidden = NO;
             self.titleL.hidden = NO;
             self.coverImageView.hidden = YES;
@@ -70,6 +90,7 @@
             self.titleL.textColor = UIColorWhite;
             break;
         case YoMineUploadCollectionViewCellTypePayed:
+            self.coverImage.hidden = YES;
             self.blurEffect.hidden = NO;
             self.titleL.hidden = NO;
             self.coverImageView.hidden = YES;
@@ -77,11 +98,13 @@
             self.titleL.textColor = UIColorWhite;
             break;
         case YoMineUploadCollectionViewCellTypeNormal:
+            self.coverImage.hidden = YES;
             self.blurEffect.hidden = YES;
             self.titleL.hidden = YES;
             self.coverImageView.hidden = YES;
             break;
         case YoMineUploadCollectionViewCellTypeMore:
+            self.coverImage.hidden = YES;
             self.blurEffect.hidden = YES;
             self.titleL.hidden = NO;
             self.titleL.text = @"更多照片\n...";
@@ -123,6 +146,12 @@
         _imageV.clipsToBounds = YES;
     }
     return _imageV;
+}
+- (UIImageView *)coverImage {
+    if (!_coverImage) {
+        _coverImage = [UIImageView new];
+    }
+    return _coverImage;
 }
 
 - (UIImageView *)coverImageView {

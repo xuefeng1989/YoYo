@@ -57,8 +57,23 @@
 }
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
+//    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.edges.equalTo(self.view);
+//    }];
+    CGFloat stuBar;
+    if (@available(iOS 11.0, *)) {
+        if (is_iPhoneXSerious) {
+            stuBar = 88.0f;
+        }else{
+            stuBar = 64.0f;
+        }
+    } else {
+        // Fallback on earlier versions
+        stuBar = 64.0f;
+    }
     [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
+        make.left.top.right.mas_equalTo(self.view);
+        make.height.mas_equalTo(self.view).mas_offset(-stuBar - 60);
     }];
 }
 - (YoMyPhotoService *)service

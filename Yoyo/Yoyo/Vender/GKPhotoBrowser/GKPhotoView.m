@@ -47,6 +47,8 @@
 @property (nonatomic, strong) UILongPressGestureRecognizer *longPress;
 @property (nonatomic, strong) UITapGestureRecognizer *tapGesture;
 @property (nonatomic, strong) UIButton *vipButton;
+@property (nonatomic, strong) UILabel *timeLabel;
+@property (nonatomic, assign) NSInteger timeNumber;
 @end
 
 @implementation GKPhotoView
@@ -217,6 +219,7 @@
         [self.imageView removeGestureRecognizer:self.tapGesture];
         [aAlertController dismissViewControllerAnimated:YES completion:nil];
          self.vipButton.frame = CGRectMake((GKScreenW - 100)/2,(self.imageView.frame.size.height - 50)/ 2 + 60, 100, 30);
+        [[self viewController].navigationController popViewControllerAnimated:YES];
     }];
     __weak __typeof(self)weakSelf = self;
     QMUIAlertAction *action2 = [QMUIAlertAction actionWithTitle:@"付费查看" style:QMUIAlertActionStyleDestructive handler:^(__kindof QMUIAlertController * _Nonnull aAlertController, QMUIAlertAction * _Nonnull action) {
@@ -284,7 +287,6 @@
 {
     if (!_longPress) {
         _longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
-//        _longPress.minimumPressDuration = 1.5;
     }
     return _longPress;
 }
@@ -300,6 +302,11 @@
         JhDownProgressView *proress = [[JhDownProgressView alloc]initWithFrame:CGRectMake((GKScreenW - 120) / 2, (GKScreenH - 150), 150, 120)];
         proress.jhDownProgressViewStyle = JhStyle_Ring;
         [self addSubview:proress];
+        self.timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 40, 50, 40)];
+        self.timeLabel.textColor = [UIColor blueColor];
+        self.timeLabel.font = [UIFont systemFontOfSize:20];
+        self.timeLabel.textAlignment = NSTextAlignmentCenter;
+        [proress addSubview:self.timeLabel];
         _progressView = proress;
         [self addTimer];
     }
@@ -310,6 +317,7 @@
 }
 - (void)addTimer
 {
+    _timeNumber = 0;
     _timer = [NSTimer scheduledTimerWithTimeInterval:0.1f target:self selector:@selector(timerAction) userInfo:nil repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
 }
@@ -320,6 +328,8 @@
     }else{
         _progressView.progress += 0.0333;
     }
+    _timeNumber ++;
+    self.timeLabel.text = [NSString stringWithFormat:@"%d",_timeNumber/10];
     if (_progressView.progress >= 1) {
         [self removeTimer];
         [self effectViewHidden];
@@ -337,6 +347,7 @@
     _labeltitle.hidden = NO;
     _redImage.hidden = NO;
     _vipButton.hidden = NO;
+    [self.timeLabel removeFromSuperview];
     [self.progressView removeFromSuperview];
     self.progressView = nil;
     [self.imageView removeGestureRecognizer:self.longPress];

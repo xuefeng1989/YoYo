@@ -85,11 +85,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     YoMineUploadCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"image" forIndexPath:indexPath];
     YoImageModel *model = self.dataArray[indexPath.row];
-//    if (model.photo && model.photo.length > 0) {
-//        [cell.imageV sd_setImageWithURL:[NSURL URLWithString:model.photo] placeholderImage:nil];
-//    }else{
-//        [cell.imageV setImage:model.image];
-//    }
+    cell.isSelf = YES;
     cell.model = model;
     return cell;
 }

@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YoMineUploadCollectionViewCell : UICollectionViewCell
-
+@property (nonatomic, assign) BOOL isSelf;
 @property (nonatomic, strong) UIImageView *imageV;
 @property (nonatomic, assign) YoMineUploadCollectionViewCellType type;
 @property (nonatomic,strong)YoImageModel *model;

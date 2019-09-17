@@ -443,7 +443,9 @@ static Class imageManagerClass = nil;
     self.fromVC = vc;
     
     if (self.showStyle == GKPhotoBrowserShowStylePush) {
+        vc.hidesBottomBarWhenPushed = YES;
         [vc.navigationController pushViewController:self animated:YES];
+         vc.hidesBottomBarWhenPushed = NO;
     }else {
         self.modalPresentationCapturesStatusBarAppearance = YES;
         [vc presentViewController:self animated:NO completion:nil];
